@@ -1,0 +1,149 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("/images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    font-size: 16px;
+
+    color: white;
+}
+
+main {
+    padding-top: 6.5rem;
+    padding-left: 6.5rem;
+
+    display: flex;
+}
+
+
+img {
+    display: block;
+
+    margin-bottom: 2.5rem;
+}
+
+.right-side {
+    margin-top: 7.5rem;
+    margin-left: 10rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    width: 30rem;
+    height: auto;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 1.3rem;
+
+    width: 37rem;
+    height: auto;
+}
+
+button {
+    border: none;
+    border-radius: 40px;
+
+    font-size: 1.3rem;
+
+    color: hsl(257, 40%, 49%);
+
+    height: 3.5rem;
+    width: 13.5rem;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.527);
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.socials {
+    display: flex;
+
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.fb,
+.insta,
+.x {
+    height: 30px;
+
+    display: block;
+
+    margin-right: 1rem;
+}
+
+.fb:hover,
+.insta:hover,
+.x:hover {
+    cursor: pointer;
+
+    transition: 0.2s ease-out;
+
+    border: 8px solid hsl(300, 69%, 71%);
+}
+
+@media only screen and (width <=1100px) {
+    body {
+        background-image: url("/images/bg-mobile.svg");
+    }
+
+    main {
+        padding: 0;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .bg {
+        width: 23rem
+    }
+
+    .logo {
+        width: 10rem;
+    }
+
+    .right-side {
+        margin-top: 0;
+        margin-left: 0;
+
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 27rem;
+
+        margin-bottom: 0;
+    }
+
+    p {
+        width: 24.5rem;
+    }
+
+    .socials {
+        margin-top: 5rem;
+        margin-left: 0;
+
+        justify-content: center;
+    }
+
+    
+}
